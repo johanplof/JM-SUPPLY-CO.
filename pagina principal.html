@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JM Supply Co.</title>
+  <link rel="icon" href="imagenes de logos/logos01.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../paginas de los productos/estiloschaquetas/estilos principales.css" />
+  <script src="../paginas de los productos/java/java_principal.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <div class="logo-container">
+      <img src="imagenes de logos/logos01.png" alt="JM Supply Co. Logo" class="logo-img" />
+      <span class="logo-text">JM Supply Co.</span>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li class="dropdown">
+          <a href="#">Productos</a>
+          <ul class="dropdown-menu">
+            <li><a href="productos_de_hombre/Ropa_hombre.html">Ropa Hombre</a></li>
+            <li><a href="productos_de_mujer/Productos_mujer.html">Ropa Mujer</a></li>
+            <li><a href="productos_ropa_mixta/ropa_mixta.html">Ropa Mixta</a></li>
+            <li><a href="productos_de_accesorios/accesorios.html">Accesorios</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Sobre Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Iniciar Sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <video autoplay muted loop class="hero-video">
+      <source src="videos_principal/nuevo.mp4" type="video/mp4" />
+      Tu navegador no soporta videos HTML5.
+    </video>
+<div class="hero-content">
+  <img src="imagenes de logos/logos01.png" alt="Mini Logo JM" class="logo-overlay" />
+  <h1 class="hero-title">Estilo Urbano. Calidad Garantizada.</h1>
+  <p>Descubre las últimas tendencias de moda con JM Supply Co.</p>
+  <a href="#" class="btn">Ver Productos</a>
+</div>
+  </section>
+</body>
+</html>
+  <!-- SLIDER ESTILO FERRARI -->
+  <section class="slider-container">
+    <button class="slider-btn prev" onclick="cambiarSlide(-1)">‹</button>
+    <div class="slider-track" id="sliderTrack">
+      <div class="slider-slide">
+        <div class="slider-content">
+          <h2>EL FERRARI 12CILINDRI</h2>
+          <p>Diseño italiano con el máximo galardón de los Red Dot Awards 2025.</p>
+          <a href="#">LEER MÁS</a>
+        </div>
+        <div class="slider-image">
+          <img src="../paginas de los productos/imagenes de logos/logos01.png" alt="Ferrari 1" />
+        </div>
+      </div>
+      <div class="slider-slide">
+        <div class="slider-content">
+          <h2>FERRARI F80</h2>
+          <p>Innovación, potencia y estética combinadas en una sola obra maestra.</p>
+          <a href="#">LEER MÁS</a>
+        </div>
+        <div class="slider-image">
+          <img src="../paginas de los productos/imagenes de logos/logo1.jpg" alt="Ferrari 2" />
+        </div>
+      </div>
+    </div>
+    <button class="slider-btn next" onclick="cambiarSlide(1)">›</button>
+  </section>
+
+  <!-- BLOQUES HORIZONTALES CON AUTO SCROLL Y DIRECCIÓN -->
+  <section class="bloques-horizontales-wrapper">
+    <button class="bloques-horizontales-arrow left" onclick="cambiarDireccionBloques(-1)">‹</button>
+    <div class="bloques-horizontales">
+      <div class="bloque-horizontal" style="background-image: url('imagenes de logos/logos01.png')" onclick="mostrarInfoCategoria('infoHombre')">
+        <h2>Ropa Hombre</h2>
+      </div>
+      <div class="bloque-horizontal" style="background-image: url('imagenes de logos/logos01.png')" onclick="mostrarInfoCategoria('infoMixta')">
+        <h2>Ropa Mixta</h2>
+      </div>
+      <div class="bloque-horizontal" style="background-image: url('imagenes de logos/logos01.png')" onclick="mostrarInfoCategoria('infoAccesorios')">
+        <h2>Accesorios</h2>
+      </div>
+    </div>
+    <button class="bloques-horizontales-arrow right" onclick="cambiarDireccionBloques(1)">›</button>
+  </section>
+
+  <!-- INFO DETALLE CATEGORÍAS -->
+  <section id="infoCategorias" class="info-categorias">
+    <div class="info-detalle" id="infoHombre">
+      <h3>Ropa Hombre</h3>
+      <p>Ofrecemos chaquetas, camisetas oversize, buzos y más con estilo urbano masculino.</p>
+    </div>
+    <div class="info-detalle" id="infoMixta">
+      <h3>Ropa Mixta</h3>
+      <p>Prendas unisex con identidad libre: hoodies, joggers, camisetas de diseño universal.</p>
+    </div>
+    <div class="info-detalle" id="infoAccesorios">
+      <h3>Accesorios</h3>
+      <p>Gorras, bolsos, gafas, cadenas y más para completar tu estilo urbano.</p>
+    </div>
+  </section>
+
+  <!-- GALERÍA DE PRODUCTOS DINÁMICA -->
+  <section class="galeria-dinamica">
+    <h2>Explora Más Estilos</h2>
+    <div class="galeria-grid">
+      <div class="galeria-item" onclick="mostrarInfo('info1')">
+        <img src="../paginas de los productos/imagenes de logos/logos01.png" alt="Chaqueta Deluxe">
+        <p>Chaqueta Deluxe</p>
+      </div>
+      <div class="galeria-item" onclick="mostrarInfo('info2')">
+        <img src="images/camisa2.jpg" alt="Camisa Diseño">
+        <p>Camisa Diseño</p>
+      </div>
+      <div class="galeria-item" onclick="mostrarInfo('info3')">
+        <img src="images/gorra2.jpg" alt="Gorra Snapback">
+        <p>Gorra Snapback</p>
+      </div>
+    </div>
+
+    <div class="info-producto" id="info1">
+      <h3>Chaqueta Deluxe</h3>
+      <p>Ideal para clima frío, materiales resistentes y diseño moderno.</p>
+    </div>
+    <div class="info-producto" id="info2">
+      <h3>Camisa Diseño</h3>
+      <p>Estilo relajado con detalles urbanos, perfecta para el día a día.</p>
+    </div>
+    <div class="info-producto" id="info3">
+      <h3>Gorra Snapback</h3>
+      <p>Un accesorio clásico reinventado, comodidad y estilo urbano.</p>
+    </div>
+  </section>
+
+  <!-- PRODUCTOS DESTACADOS -->
+  <section class="products">
+    <h2>Nuestros Productos</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="images/chaqueta.jpg" alt="Chaqueta moderna" />
+        <h3>Chaqueta Street</h3>
+        <p>$150.000</p>
+        <a href="#" class="btn">Comprar</a>
+      </div>
+      <div class="product-card">
+        <img src="images/camisa.jpg" alt="Camisa casual" />
+        <h3>Camisa Urbana</h3>
+        <p>$90.000</p>
+        <a href="#" class="btn">Comprar</a>
+      </div>
+      <div class="product-card">
+        <img src="images/gorra.jpg" alt="Gorra clásica" />
+        <h3>Gorra Classic</h3>
+        <p>$60.000</p>
+        <a href="#" class="btn">Comprar</a>
+      </div>
+    </div>
+  </section>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2025 JM Supply Co. - Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- REDES SOCIALES FLOTANTES -->
+  <div class="social-float">
+    <a href="https://facebook.com/profile.php?id=61577095486328" target="_blank" class="social-icon facebook" title="Facebook">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" />
+    </a>
+    <a href="https://instagram.com/jmsupplyco.1/" target="_blank" class="social-icon instagram" title="Instagram">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" />
+    </a>
+    <a href="https://wa.me/573142142340" target="_blank" class="social-icon whatsapp" title="WhatsApp">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+    </a>
+  </div>
+</body>
+</html>
