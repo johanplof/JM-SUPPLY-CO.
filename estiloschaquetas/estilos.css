@@ -1,0 +1,177 @@
+/* Estilos para la página de detalles del producto */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.titulo-pantalla {
+    background-image: url('imagen-de-fondo.jpg'); /* Cambia 'imagen-de-fondo.jpg' por la URL de tu imagen de fondo */
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0; /* Ajusta el espaciado superior e inferior según sea necesario */
+}
+
+.titulo-pantalla h1 {
+    font-size: 36px;
+    margin: 0;
+    padding: 20px;
+}
+
+
+header {
+    background-color: #ffffff;
+    color: #000;
+    text-align: center;
+    padding: 10px;
+}
+
+.producto-detalle {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide el contenido en dos columnas */
+    align-items: center;
+    padding: 20px;
+}
+
+.producto-detalle img {
+    max-width: 100%; /* Asegura que la imagen no se desborde del contenedor */
+}
+
+.info-producto {
+    margin-left: 20px;
+    text-align: left;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.price {
+    font-size: 18px;
+    color: #000000;
+}
+
+.tallas {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.tallas button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+/* Agrega estilos CSS para posicionar los elementos a la derecha */
+.derecha-contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: auto; /* Esto empujará el contenedor hacia la derecha */
+    padding: 20px; /* Agrega espaciado si es necesario */
+}
+/* Estilos para la lupa */
+.imagen-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinea la imagen a la izquierda */
+    position: relative;
+}
+
+.lupa {
+    width: 40px; /* Tamaño de la lupa */
+    height: 40px;
+    position: absolute;
+    background: url('ruta-a-tu-icono-de-lupa.png') center center no-repeat; /* Usa tu propio icono de lupa */
+    cursor: pointer;
+}
+.presentacion {
+    text-align: center; /* Centra horizontalmente la imagen */
+    margin-bottom: 20px; /* Espacio entre la imagen y el contenido principal */
+}
+
+.presentacion img {
+    max-width: 100%; /* Ajusta el tamaño de la imagen al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto de la imagen */
+
+
+}
+.inicio {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000; /* Fondo negro */
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px; /* Añade un espacio interno para que el fondo negro se vea */
+}
+
+.inicio a {
+    font-family: 'Permanent Marker', cursive;
+    color: #FFFFFF; /* Texto en blanco */
+    text-decoration: none;
+    background-color: #000000; /* Fondo negro para el enlace */
+    padding: 5px 10px; /* Ajusta el espacio interno para que el fondo negro rodee el texto */
+}
+
+.presentacion {
+    
+    flex: 10;
+    text-align: center;
+}
+
+.presentacion img {
+    width: 10%;
+    max-width: 80%;
+    height: auto;
+}
+
+.icono {
+    position: fixed;
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior según tu preferencia */
+    right: 20px; /* Ajusta la distancia desde la izquierda según tu preferencia */
+    z-index: 1000; /* Asegura que esté en la parte superior de otros elementos */
+    transition: transform 0.2s; /* Agrega una transición suave */
+}
+.icono:hover {
+    transform: scale(1.2); /* Aumenta el tamaño cuando se hace hover */
+}
+.informacion-vendedor {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+.redes-sociales a,
+.atencion-cliente a,
+.politica-devoluciones a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.redes-sociales a:hover,
+.atencion-cliente a:hover,
+.politica-devoluciones a:hover {
+    color: #ff6600; /* Cambia el color al pasar el mouse */
+}
+
+/* Estilos para el logotipo fijo en la parte izquierda */
+.logo-fijo {
+    position: fixed;
+    top: 0; /* Ajusta la posición vertical según tu preferencia */
+    left: 0; /* Ajusta la posición horizontal a la izquierda */
+    background-color: #fff; /* Fondo blanco para que el logo sea visible */
+    padding: 10px; /* Espaciado para el logo */
+    z-index: 1000; /* Asegura que esté en la parte superior de otros elementos */
+}
+
+.inicio a {
+    font-family: 'Permanent Marker', cursive;
+}

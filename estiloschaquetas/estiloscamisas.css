@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.producto {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    margin-top: 10px;
+    font-size: 24px;
+}
+
+p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.price {
+    font-size: 20px;
+    color: #ff6600;
+    margin-top: 10px;
+}
+
+    /* Estilos CSS para la marca */
+.marca {
+    text-align: center; /* Centra horizontalmente */
+    margin-top: 20px; /* Añade margen superior para separar del encabezado */
+}
+
+.marca img {
+    width: 15%; /* Define el ancho deseado para la imagen */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    display: block; /* Asegura que la imagen se muestre como un bloque */
+    margin: 0 auto; /* Centra horizontalmente dentro de su contenedor */
+}
+.icono {
+    position: fixed;
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior según tu preferencia */
+    left: 20px; /* Ajusta la distancia desde la izquierda según tu preferencia */
+    z-index: 1000; /* Asegura que esté en la parte superior de otros elementos */
+    transition: transform 0.2s; /* Agrega una transición suave */
+}
+.icono:hover {
+    transform: scale(1.2); /* Aumenta el tamaño cuando se hace hover */
+}
+.informacion-vendedor {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+.redes-sociales a,
+.atencion-cliente a,
+.politica-devoluciones a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.redes-sociales a:hover,
+.atencion-cliente a:hover,
+.politica-devoluciones a:hover {
+    color: #ff6600; /* Cambia el color al pasar el mouse */
+}
+
+/* Estilos para el logotipo fijo en la parte izquierda */
+.logo-fijo {
+    position: fixed;
+    top: 0; /* Ajusta la posición vertical según tu preferencia */
+    left: 0; /* Ajusta la posición horizontal a la izquierda */
+    background-color: #fff; /* Fondo blanco para que el logo sea visible */
+    padding: 10px; /* Espaciado para el logo */
+    z-index: 1000; /* Asegura que esté en la parte superior de otros elementos */
+}
+/* Estilos para el título */
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    /* Agrega cualquier otro estilo deseado, como tamaño de fuente y color */
+    font-size: 36px; /* Tamaño de fuente */
+    color: #FF6600; /* Color del texto */
+}

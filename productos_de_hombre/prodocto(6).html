@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Detalles del Producto 1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abrigada y Chic</title>
+    <link rel="stylesheet" href="estiloschaquetas/estilos.css">
+    <link rel="shortcut icon" href="imagenes chaquetas/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <div class="marco">
+            <div class="presentacion">
+                <img src="imagenes chaquetas/logo.png" alt="Logo de presentación" class="logo">
+            </div>
+            <div class="inicio">
+                <a href="pagina principal.html">Volver al inicio</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Detalles del producto -->
+    <section class="producto-detalle">
+        <div class="imagen-contenedor">
+            <img src="imagenes chaquetas/chaqueta6.png" alt="Chaqueta" width="80%" class="producto-imagen">
+            <div id="lupa" class="lupa"></div>
+        </div>
+
+        <div class="info-producto">
+            <img src="imagenes chaquetas/logo.png" width="75" alt="Logo">
+            <h2>Chaqueta</h2>
+            <p>Esta chaqueta es perfecta para cualquier ocasión.</p>
+            <strong class="price">$25.000</strong>
+
+            <div class="tallas">
+                <button onclick="mostrarPrecio('Talla S')">S</button>
+                <button onclick="mostrarPrecio('Talla M')">M</button>
+                <button onclick="mostrarPrecio('Talla L')">L</button>
+                <button onclick="mostrarPrecio('Talla XL')">XL</button>
+                <p>Precio: <strong id="precioProducto">$25.000</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script y detalles adicionales -->
+    <div class="derecha-contenedor">
+        <script src="java/j.js"></script>
+    </div>
+
+    <!-- Contacto y redes sociales -->
+    <main>
+        <div class="icono">
+            <a href="whatsapp://send?phone=3022117563&text=Hola,%20estoy%20interesado%20en%20tu%20producto.%20¿Puedes%20ayudarme%3F">
+                <img src="iconos/iconos.svg" alt="icono WhatsApp">
+            </a>
+        </div>
+
+        <section class="informacion-vendedor">
+            <div class="redes-sociales">
+                <a href="https://www.instagram.com/johan.andres0/" target="_blank">Instagram</a>
+                <a href="mailto:correo@tuvendedor.com">Correo Electrónico</a>
+            </div>
+            <div class="atencion-cliente">
+                <a href="#">Atención al Cliente</a>
+            </div>
+            <div class="politica-devoluciones">
+                <a href="#">Política de Devoluciones</a>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
